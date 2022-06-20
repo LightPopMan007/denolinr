@@ -218,8 +218,6 @@ export default function Home() {
           <div>
             <h1 className="text-3xl md:text-5xl font-bold md:max-w-md">Developer Resources</h1>
           </div>
-
-
           <div className="md:max-w-xl">
             <p className="text-lg md:text-md mt-3">Help secure the network by running decentralized infrastructure. Learn about operating a validator node.</p>
             <div className="flex flex-col mt-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
