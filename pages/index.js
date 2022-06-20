@@ -9,13 +9,6 @@ import Link from 'next/link';
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  React.useEffect(() => {
-    return () => {
-      if(typeof window !== 'undefined') {
-        window.removeEventListener('scroll', console.log('scroll'));
-      }
-    }
-  }, []);
 
 
   return (
@@ -231,7 +224,7 @@ export default function Home() {
             <p className="text-lg md:text-md mt-3">Help secure the network by running decentralized infrastructure. Learn about operating a validator node.</p>
             <div className="flex flex-col mt-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a href="#" className="px-8 py-3 text-sm rounded-full bg-black hover:bg-slate-50 text-white hover:text-black flex items-center justify-center">
-                <span className="inline-block uppercase">get started</span></a>
+                <span className="inline-block uppercase">start building</span></a>
             </div>
           </div>
           <div className="sc-149597fa-0 cRUoBs"></div>
@@ -290,7 +283,7 @@ export default function Home() {
           </div>
 
           <div className="flex">
-            <p>SOLANA.COM</p>
+            <p>SOLANA.ACTIVATE</p>
             <div className="relative">
               <input type="checkbox" id="sortbox" className="hidden absolute" />
                 <label htmlFor="sortbox" className="flex items-center space-x-1 cursor-pointer">
