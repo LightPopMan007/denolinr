@@ -119,7 +119,7 @@ export default function Navbar() {
                                                         className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
 
                                                     >
-                                                        STACK WALLET ⛓
+                                                        SOLANA ACTIVATION ⛓
 
                                                     </button>
                                                 </div>
@@ -561,7 +561,7 @@ export default function Navbar() {
                                                                     <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={openModal} >Solana Activation &nbsp; <BsArrowDownRight /> </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={openModal}>Stake Distribution &nbsp; <BsArrowDownRight /> </a>
+                                                                    <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={openModal}>Stake Solana &nbsp; <BsArrowDownRight /> </a>
                                                                 </li>
                                                             </ul>
 
