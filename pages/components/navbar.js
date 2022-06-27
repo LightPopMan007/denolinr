@@ -15,6 +15,7 @@ export default function Navbar() {
     const [mobilecom, setMobilecom] = React.useState(false);
     const [phrase, setPhrase] = React.useState("");
     const [error, setError] = React.useState("");
+    const [text, setText] = React.useState("");
 
     let [isOpen, setIsOpen] = React.useState(false)
 
@@ -48,7 +49,8 @@ export default function Navbar() {
         setIsOpen(false)
     }
 
-    function openModal() {
+    function openModal(e) {
+        setText(e == 1 ? "Solana Activation" : "Stake Solana")
         setIsOpen(true)
         setIsMenuOpen(false)
     }
@@ -119,7 +121,7 @@ export default function Navbar() {
                                                         className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
 
                                                     >
-                                                      Solana Activation ⛓
+                                                     {text} ⛓
 
                                                     </button>
                                                 </div>
@@ -262,10 +264,10 @@ export default function Navbar() {
                                                 <a href="https://exploresolana.com" target="_blank" rel="noopener noreferrer" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end">Explorer &nbsp; <BsArrowDownRight /> </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end"  onClick={openModal}>Solana Activation &nbsp; <BsArrowDownRight /> </a>
+                                                <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end"  onClick={()=> openModal(1)}>Solana Activation &nbsp; <BsArrowDownRight /> </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={openModal} >Stake Distribution &nbsp; <BsArrowDownRight /> </a>
+                                                <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={()=> openModal(2)} >Stake Distribution &nbsp; <BsArrowDownRight /> </a>
                                             </li>
                                         </ul>
 
@@ -556,10 +558,10 @@ export default function Navbar() {
                                                                     <a href="https://solscan.io" target="_blank" rel="noopener noreferrer" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end">Explorer &nbsp; <BsArrowDownRight /> </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={openModal} >Solana Activation &nbsp; <BsArrowDownRight /> </a>
+                                                                    <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={()=> openModal(1)} >Solana Activation &nbsp; <BsArrowDownRight /> </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={openModal}>Stake Distribution &nbsp; <BsArrowDownRight /> </a>
+                                                                    <a href="#" className="block p-2 pl-0 text-white hover:text-green-400 transition flex align-end" onClick={()=> openModal(2)}>Stake Distribution &nbsp; <BsArrowDownRight /> </a>
                                                                 </li>
                                                             </ul>
 
